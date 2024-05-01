@@ -9,8 +9,8 @@ public class DB {
 
     private static Connection conn = null; // Inicializa a conexão com o banco de dados como nula
 
-    //Conectar com o banco de dados
-    // No JDBC é instanciar um obejto do tipo Connection
+    // Conectar com o banco de dados
+    // No JDBC é instanciar um objeto do tipo Connection
     public static Connection getConnection () {
         if (conn == null) {
             try {
