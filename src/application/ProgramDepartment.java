@@ -30,6 +30,10 @@ public class ProgramDepartment {
         newdepartment.setName("Music");
         departmentDao.update(newdepartment);
         System.out.println("Update Sucess!");
+        System.out.println();
 
+        System.out.println("---Teste #5: DepartmentDeleteById");
+        departmentDao.deleteById(10);
+        System.out.println("Delete Sucess!");
     }
 }
