@@ -13,5 +13,10 @@ public class ProgramDepartment {
         System.out.println("---Teste #1: DepartmentFindAll");
         List<Department> list = departmentDao.findAll();
         list.forEach(System.out::println);
+        System.out.println();
+
+        System.out.println("---Teste #2: DepartmentFindById");
+        Department department = departmentDao.findById(2);
+        System.out.println(department);
     }
 }
