@@ -24,5 +24,12 @@ public class ProgramDepartment {
         Department newdepartment = new Department(null, "Gym");
         departmentDao.insert(newdepartment);
         System.out.println("Insert sucess! " + newdepartment.getId());
+
+        System.out.println("---Teste #4: DepartmentUpdate");
+        newdepartment = departmentDao.findById(1);
+        newdepartment.setName("Music");
+        departmentDao.update(newdepartment);
+        System.out.println("Update Sucess!");
+
     }
 }
