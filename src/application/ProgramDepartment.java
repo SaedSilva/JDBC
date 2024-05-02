@@ -18,5 +18,11 @@ public class ProgramDepartment {
         System.out.println("---Teste #2: DepartmentFindById");
         Department department = departmentDao.findById(2);
         System.out.println(department);
+        System.out.println();
+
+        System.out.println("---Teste #3: DepartmentInsert");
+        Department newdepartment = new Department(null, "Gym");
+        departmentDao.insert(newdepartment);
+        System.out.println("Insert sucess! " + newdepartment.getId());
     }
 }
